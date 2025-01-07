@@ -1,0 +1,9 @@
+{
+	"name": "lbdiyt",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ebe04f56-2679-4732-988b-7ebe5a4ab90d",
+		"tenantId": "1d231105-82f1-4826-8ad6-785e9d89be18"
+	}
+}

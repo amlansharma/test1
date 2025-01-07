@@ -1,0 +1,24 @@
+{
+	"name": "storagetrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "storageeventtrigger",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/a56a2f6c-a9e5-439d-8c5a-b3b385f4cda5/resourceGroups/learnbydoingityt/providers/Microsoft.Storage/storageAccounts/lbdiblob",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
