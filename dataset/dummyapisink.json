@@ -1,0 +1,23 @@
+{
+	"name": "dummyapisink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_link",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "dummyapiop.txt",
+				"container": "apisink"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"name": "apisink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_link",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "apidata.csv",
+				"container": "apisink"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

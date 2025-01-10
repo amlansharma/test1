@@ -1,0 +1,28 @@
+{
+	"name": "dummyapicall",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_link",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "dummy1.txt",
+				"container": "apisink"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "dummydata",
+				"type": "String"
+			}
+		]
+	}
+}
